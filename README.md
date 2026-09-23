@@ -1,8 +1,6 @@
 # HR Analytics Dashboard
 
-A Tableau dashboard analyzing employee dataset covering headcount, attrition, demographics, compensation, and performance across departments and workforce (2015–2024).
-
-**[View the live interactive dashboard on Tableau Public](https://public.tableau.com/views/HRDashboard_17900643829960/EmpRecords?:language=en-GB&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**
+A Tableau dashboard analyzing employee dataset covering headcount, attrition, demographics, compensation and performance across departments and workforce (2015–2024).
 
 ![HR Summary Dashboard](images/hr-summary-dashboard.png)
 
@@ -20,7 +18,7 @@ A Tableau dashboard analyzing employee dataset covering headcount, attrition, de
 | Average salary | $70,951 |
 | Avg. tenure (active) | 6.5 years |
 
-A full breakdown by department, education, tenure, and compensation is available in the dashboard above.
+A full breakdown by department, education, tenure and compensation is available in the dashboard above.
 
 ## Dataset
 
