@@ -2,8 +2,6 @@
 
 A Tableau dashboard analyzing employee dataset covering headcount, attrition, demographics, compensation and performance across departments and workforce (2015–2024).
 
-![HR Summary Dashboard](images/hr-summary-dashboard.png)
-
 ## Objective
 
 This dashboard gives HR and business leaders a single view of workforce composition, attrition, and compensation to support headcount planning and retention decisions.
@@ -12,6 +10,10 @@ This dashboard gives HR and business leaders a single view of workforce composit
 - It surfaces how compensation varies by education, department, and gender, helping flag pay-equity gaps before they become retention risks.
 - It links performance ratings to education level, informing where training or hiring criteria could close performance gaps.
 - Together, these views turn raw employee records into a monitoring tool for workforce risk rather than a static report.
+
+![HR Summary Dashboard](images/hr-summary-dashboard.png)
+
+
 
 ## Key Metrics
 
