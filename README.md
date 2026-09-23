@@ -2,6 +2,8 @@
 
 A Tableau dashboard analyzing an 8,950-record employee dataset covering headcount, attrition, demographics, compensation, and performance across a 7-department, 8-state workforce (2015–2024).
 
+**[View the live interactive dashboard on Tableau Public](https://public.tableau.com/views/HRDashboard_17900643829960/EmpRecords?:language=en-GB&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**
+
 ![HR Summary Dashboard](images/hr-summary-dashboard.png)
 
 ## Key Metrics
@@ -30,7 +32,9 @@ A full breakdown by department, education, tenure, and compensation is available
 
 ![Employee Records Dashboard](images/employee-records-dashboard.png)
 
-A filterable, row-level view of every employee — ID, name, age, education, role, department, location, salary, hire status, and tenure — with filters by department and employment status.
+A filterable, row-level view of every employee — ID, name, age, education, role, department, location, salary, hire status and tenure — with filters by department and employment status.
+
+**[Open this view on Tableau Public](https://public.tableau.com/views/HRDashboard_17900643829960/EmpRecords?:language=en-GB&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**
 
 ## Tech stack
 
@@ -44,27 +48,10 @@ A filterable, row-level view of every employee — ID, name, age, education, rol
 hr-analytics-dashboard/
 ├── README.md
 ├── data/
-│   └── dataset.csv              # source data (8,950 employee records)
-├── images/
-│   ├── hr-summary-dashboard.png # dashboard: overview, demographics, income
-│   └── employee-records-dashboard.png  # dashboard: row-level employee detail
-├── HRSummary.pdf                 # original dashboard export (PDF)
-└── EmpRecords.pdf                 # original dashboard export (PDF)
-```
-
-## Reproducing the metrics
-
-The figures above were derived directly from `data/dataset.csv` with pandas:
-
-```python
-import pandas as pd
-
-df = pd.read_csv("data/dataset.csv", sep=";")
-df["Termdate"] = pd.to_datetime(df["Termdate"], format="%d/%m/%Y", errors="coerce")
-df["Status"] = df["Termdate"].isna().map({True: "Active", False: "Terminated"})
-
-attrition_rate = (df["Status"] == "Terminated").mean() * 100
-print(f"Attrition rate: {attrition_rate:.2f}%")
+│   └── dataset.csv                         # source data (8,950 employee records)
+└── images/
+    ├── hr-summary-dashboard.png            # dashboard: overview, demographics, income
+    └── employee-records-dashboard.png      # dashboard: row-level employee detail
 ```
 
 ## Author
