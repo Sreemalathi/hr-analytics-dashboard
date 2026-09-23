@@ -13,8 +13,6 @@ This dashboard gives HR and business leaders a single view of workforce composit
 
 ![HR Summary Dashboard](images/hr-summary-dashboard.png)
 
-
-
 ## Key Metrics
 
 | Metric | Value |
